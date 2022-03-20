@@ -1,0 +1,7 @@
+﻿  physics.cpp
+LINK : warning LNK4098: библиотека по умолчанию "MSVCRT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+core.obj : error LNK2019: ссылка на неразрешенный внешний символ SOIL_load_image в функции "void __cdecl main_loop(void)" (?main_loop@@YAXXZ)
+core.obj : error LNK2019: ссылка на неразрешенный внешний символ SOIL_free_image_data в функции "void __cdecl main_loop(void)" (?main_loop@@YAXXZ)
+C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\projects\VC9\Debug\SOIL.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+C:\Users\Ivanh\source\repos\Engine\x64\Debug\Engine.exe : fatal error LNK1120: неразрешенных внешних элементов: 2

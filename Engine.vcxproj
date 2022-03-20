@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{4C0E4192-2014-4833-A361-E6361C1CF3E7}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\win32\include;C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\src;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\projects\VC9\Debug;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\win32\lib-vc2019;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\src;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\x64\include;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\projects\VC9\Debug;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\x64\lib-vc2019;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\win32\include;C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\src;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\projects\VC9\Release;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\win32\lib-vc2019;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\src;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\include;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Ivanh\source\repos\Engine\Engine\include\SOIL\Simple OpenGL Image Library\projects\VC9\Release;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLFW\x64\lib-vc2019;C:\Users\Ivanh\source\repos\Engine\Engine\include\GLEW\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="src\core\core.cpp" />
+    <ClCompile Include="src\core\math.cpp" />
+    <ClCompile Include="src\ent\timer.cpp" />
+    <ClCompile Include="src\gl\gl.cpp" />
+    <ClCompile Include="src\input\input.cpp" />
+    <ClCompile Include="src\physic\aabb.cpp" />
+    <ClCompile Include="src\physic\colider.cpp" />
+    <ClCompile Include="src\physic\colision_sphere.cpp" />
+    <ClCompile Include="src\physic\phys_eng.cpp" />
+    <ClCompile Include="src\physic\phys_eng_comp.cpp" />
+    <ClCompile Include="src\physic\phys_object.cpp" />
+    <ClCompile Include="src\physic\phys_obj_comp.cpp" />
+    <ClCompile Include="src\physic\plane.cpp" />
+    <ClCompile Include="src\render\camera.cpp" />
+    <ClCompile Include="src\render\light\light.cpp" />
+    <ClCompile Include="src\render\light\skybox.cpp" />
+    <ClCompile Include="src\render\material.cpp" />
+    <ClCompile Include="src\render\model.cpp" />
+    <ClCompile Include="src\render\render.cpp" />
+    <ClCompile Include="src\render\scene.cpp" />
+    <ClCompile Include="src\render\shader.cpp" />
+    <ClCompile Include="src\render\texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\core.h" />
+    <ClInclude Include="src\core\math.h" />
+    <ClInclude Include="src\ent\timer.h" />
+    <ClInclude Include="src\gl\gl.h" />
+    <ClInclude Include="src\include.h" />
+    <ClInclude Include="src\input\input.h" />
+    <ClInclude Include="src\physic\aabb.h" />
+    <ClInclude Include="src\physic\colider.h" />
+    <ClInclude Include="src\physic\colision_data.h" />
+    <ClInclude Include="src\physic\colision_sphere.h" />
+    <ClInclude Include="src\physic\counter.h" />
+    <ClInclude Include="src\physic\include_physic.h" />
+    <ClInclude Include="src\physic\phys_eng.h" />
+    <ClInclude Include="src\physic\phys_eng_comp.h" />
+    <ClInclude Include="src\physic\phys_object.h" />
+    <ClInclude Include="src\physic\phys_obj_comp.h" />
+    <ClInclude Include="src\physic\plane.h" />
+    <ClInclude Include="src\render\buffer.h" />
+    <ClInclude Include="src\render\camera.h" />
+    <ClInclude Include="src\render\light\light.h" />
+    <ClInclude Include="src\render\light\skybox.h" />
+    <ClInclude Include="src\render\material.h" />
+    <ClInclude Include="src\render\model.h" />
+    <ClInclude Include="src\render\render.h" />
+    <ClInclude Include="src\render\scene.h" />
+    <ClInclude Include="src\render\shader.h" />
+    <ClInclude Include="src\render\texture.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
